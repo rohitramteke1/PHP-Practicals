@@ -40,6 +40,9 @@
             background-color: var(--light-black);
             padding: 20px;
         }
+        textarea {
+            padding: 10px;
+        }
         .form button {
             border: none;
             outline: none;
@@ -69,9 +72,11 @@
             background-color: #0077f6;
         }
         .form-data {
-            background-color: red;
-            padding: 10px;
-            margin: 5px;
+            color: white;
+            background-color: #555;
+            padding: 10px 20px;
+            margin: 5px 20px;
+            border-radius: 5px;
         }
     </style>
 
@@ -96,13 +101,13 @@
         <!-- PHP Here -->
         <div class="form-data">
             <?php
-            $string = $_POST["form"];
-            echo "Original String: " . $string . '<br>';
-            echo "Length: " . strlen($string) . '<br>';
-            echo "Reverse: " . strrev($string) . '<br>';
-            echo "Uppercase: " . strtoupper($string) . '<br>';
-            echo "Lowercase: " . strtolower($string) . '<br>';
-            // echo "Lowercase: " . str_replace($string, "rohit", "Kozo") . '<br>';
+                $string = $_POST["form"];
+                echo "Original String: " . $string . '<br>';
+                echo "Length: " . strlen($string) . '<br>';
+                echo "Reverse: " . strrev($string) . '<br>';
+                echo "Uppercase: " . strtoupper($string) . '<br>';
+                echo "Lowercase: " . strtolower($string) . '<br>';
+                // echo "Lowercase: " . str_replace($string, "rohit", "Kozo") . '<br>';
             ?>
         </div>
 
