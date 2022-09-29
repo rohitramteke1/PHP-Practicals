@@ -9,8 +9,7 @@
         echo "Reverse: " . strrev($string) . '<br>';
         echo "Uppercase: " . strtoupper($string) . '<br>';
         echo "Lowercase: " . strtolower($string) . '<br>';
-        echo "Lowercase: " . str_replace($string, "rohit", "Kozo") . '<br>';
-
+        // echo "Lowercase: " . str_replace($string, "rohit", "Kozo") . '<br>';
     ?>
 
 </body>
