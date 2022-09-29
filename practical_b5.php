@@ -68,17 +68,21 @@
         .form div button:hover{
             background-color: #0077f6;
         }
-
+        .form-data {
+            background-color: red;
+            padding: 10px;
+            margin: 5px;
+        }
     </style>
 
 </head>
 <body>
     <div class="container">
         <div class="form">
-            <form  action="welcome.php" method="post">
+            <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <textarea name="form" id="form" cols="70" rows="10"></textarea>
                 <!-- <input type="submit"> -->
-                <button type="submit">string-length</button>
+                <button type="submit">String-Ops</button>
             </form>
             <div class="btn">
                 <button>string-length</button>
@@ -88,10 +92,20 @@
                 <button>string-replace</button>
             </div>
         </div>
-        
-        <div id="root">
-            Your Content
+
+        <!-- PHP Here -->
+        <div class="form-data">
+            <?php
+            $string = $_POST["form"];
+            echo "Original String: " . $string . '<br>';
+            echo "Length: " . strlen($string) . '<br>';
+            echo "Reverse: " . strrev($string) . '<br>';
+            echo "Uppercase: " . strtoupper($string) . '<br>';
+            echo "Lowercase: " . strtolower($string) . '<br>';
+            // echo "Lowercase: " . str_replace($string, "rohit", "Kozo") . '<br>';
+            ?>
         </div>
+
     </div>
 
 </body>
