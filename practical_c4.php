@@ -17,6 +17,7 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         body {
             width: 100%;
@@ -43,6 +44,11 @@
             border-radius: 10px;
             font-size: 15px;
             box-shadow: 2px 2px 20px rgba(30,30,30, 0.9);
+            transition: all .3s ease;
+        }
+        .form:hover{
+            box-shadow: 2px 2px 20px rgba(10,10,10, 1);
+            transform: scale(1.01);
         }
         .form label, input{
             padding: 2px;
@@ -72,6 +78,21 @@
         .form input:focus {
             outline: none;
             border: none;
+        }
+
+        /* After the Submition */
+        .form-data {
+            padding: 20px 40px;
+            width: 100%;
+            height: 50%;
+            /* background-color: #ADEFD1FF;
+            color: #00203FFF; */
+            /* color: #101820FF;
+            background-color: #FEE715FF; */
+            /* color: #FCF6F5FF;
+            background-color: #2BAE66FF; */
+            color: whitesmoke;
+            background-color: #282923;
         }
     </style>
 
