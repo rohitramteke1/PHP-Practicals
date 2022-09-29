@@ -37,7 +37,6 @@
         public static function countObjects() {
             echo "No. of Student's " . self::$counter . "\n";
         }
-
     }
 
     $student1 = new Student(2041054, "Rohit", "Computer Enginnering", 2022);
