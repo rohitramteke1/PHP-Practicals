@@ -1,30 +1,43 @@
-<?php
-    global $asc_arr;
-    global $asc_arr_2D;
-    $asc_arr = array();
-    $asc_arr_2D = array();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        $list = array(
+                            "India" => "Mumbai",
+                            "Japan" => "Tokyo",
+                            "U.S." => "New York",
+                            "China" => "Beijing",
+                            "U.K." => "London",
+                            "France" => "Paris",
+                            "U.A.E." => "Dubai",
+                        );
+                        foreach($list as $key => $value) {
+                            echo "<tr>";
+                                echo "<td>". $key   ."</td>";
+                                echo "<td>". $value ."</td>";
+                            echo "</tr>";
+                        }
 
-    function arrayInput() {
-        // taking an array input
-        $size = (int)readline("Enter the size of an Array: ");
-
-        for ($i=0; $i < $size; $i++) { 
-            $key = readline("Enter the key: ");
-            $value = readline("Enter the value: ");
-            $asc_arr[$key] = $value;
-        }
-    }
-
-    function array2Dconvert() {
-        // Converting it into the 2D array
-        foreach ($asc_arr as $key => $value) { 
-            array_push($asc_arr_2D, [$key, $value]);
-        }
-    }
-        
-    arrayInput();
-    array2Dconvert();
-    arrayPrint();
-    print_r($asc_arr_2D);
-
-?>
+                    ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
