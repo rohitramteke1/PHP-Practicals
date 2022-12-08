@@ -29,7 +29,7 @@
             width: 100%;
             height: 50%;
             filter: blur(1px);
-            background: linear-gradient(rgb(10,10,10, 0.5), rgb(30,30,30, 0.9)), url("https://images.pexels.com/photos/13263102/pexels-photo-13263102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") 50% 75%;
+            background: linear-gradient(rgb(10,10,10, 0.5), rgb(30,30,30, 0.9)), url("https://images.pexels.com/photos/13263102/pexels-photo-13263102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") 50% 75% ;
             border-bottom: 2px solid white;
         }
         .box {
@@ -56,7 +56,7 @@
             margin: 20px;
             background-color: rgb(50,50,50);
             border-radius: 10px;
-            box-shadow: 0 0 2px rgba(255,255,255);
+            box-shadow: 0 0 15px rgba(255,255,255);
             color: white;
             height: 300px;
         }
